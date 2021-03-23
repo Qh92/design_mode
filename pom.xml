@@ -13,6 +13,7 @@
         <module>factorymethod</module>
         <module>abstractfactory</module>
         <module>decorator</module>
+        <module>adapter</module>
     </modules>
 
 
