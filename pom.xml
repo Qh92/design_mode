@@ -11,6 +11,8 @@
     <modules>
         <module>simplefactory</module>
         <module>factorymethod</module>
+        <module>abstractfactory</module>
+        <module>decorator</module>
     </modules>
 
 
