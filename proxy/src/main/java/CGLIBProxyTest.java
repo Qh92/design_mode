@@ -15,6 +15,9 @@ class Programmer{
     public void code(){
         System.out.println("I'm a Programmer,Just Coding.....");
     }
+    public void eat(){
+        System.out.println("I'm eating.....");
+    }
 }
 
 class Hacker implements MethodInterceptor {
@@ -41,6 +44,7 @@ public class CGLIBProxyTest {
         enhancer.setCallback(hacker);
         Programmer proxy =(Programmer)enhancer.create();
         proxy.code();
+        proxy.eat();
 
     }
 }
