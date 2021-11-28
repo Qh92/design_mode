@@ -18,6 +18,7 @@
         <module>singleton</module>
         <module>strategy</module>
         <module>observer</module>
+        <module>responsibility</module>
     </modules>
 
 
