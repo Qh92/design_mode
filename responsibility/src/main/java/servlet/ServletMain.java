@@ -66,6 +66,9 @@ class HTMLFilter implements Filter {
     public boolean doFilter(Request request,Response response,FilterChain filterChain) {
         //处理当前filter的事情
         System.out.println("HTMLFilter before");
+        if (true) {
+            return false;
+        }
         //调用下一个filter
         filterChain.doFilter(request, response);
         System.out.println("HTMLFilter after");
@@ -107,7 +110,9 @@ class FilterChain extends FilterChainAdapter {
         if (index > filters.size() - 1) {
             return false;
         }
-        filters.get(index++).doFilter(request, response, this);
+        if (!filters.get(index++).doFilter(request, response, this)){
+            return false;
+        }
         return true;
     }
 }
