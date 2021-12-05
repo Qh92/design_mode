@@ -19,6 +19,7 @@
         <module>strategy</module>
         <module>observer</module>
         <module>responsibility</module>
+        <module>builder</module>
     </modules>
 
 
